@@ -23,6 +23,8 @@ http.createServer(function (req, res) {
 		res.end("This is page 2. <a href='/'>Back.</a>\n"); // send response and close connection	
 	} else if (path == "/page3") {
 		res.end("You've reached the end of comupture storage. Quit now");
+	} else if (path == "/page4") {
+		res.end("You're back to life. Good for you.");
 	}
 
 }).listen(port);
